@@ -11,7 +11,7 @@ The library reads the temperature and humidty data from AOSONG AM2311 sensor. It
 This library is used to communicate with AM2311 through I2C.
  == Hardware Required == 
  * Arduino board
- * AOSONG AM2311 sensor
+ * [http://www.aosong.com/cn/products/details.asp?id=93 AOSONG AM2311 sensor]
 
  == Software Required ==
  * Arduino IDE 1.0 or newer
