@@ -1,0 +1,58 @@
+#summary AOSONG AM2311 library for Arduino
+#labels Featured
+
+ = Introduction =
+
+The library reads the temperature and humidty data from AOSONG AM2311 sensor. It makes the communication between Arduino and seanor easy.
+ 
+ == Function ==
+This library is used to communicate with AM2311 through I2C.
+ == Hardware Required == 
+ * Arduino board
+ * AOSONG AM2311 sensor
+
+ == Software Required ==
+ * Arduino IDE 1.0 or newer
+
+
+ == Library Required ==
+ * Wire
+
+ = Code example =
+With this library, the work to read temperature and humidy from the sensor becomes very very simple.
+
+{{{
+
+#include <Arduino.h>
+#include <HardwareSerial.h>
+#include <ERxAM2311.h>
+#include <Wire.h>
+
+int iLoopIndex = 0;
+
+ERxAM2311 amSensor;
+
+void setup() {
+
+	Serial.begin(9600);
+	Serial.println("Starting...");
+}
+
+void loop() {
+
+	Serial.print("Detect temperature and humidity => ");
+	Serial.println(++iLoopIndex);
+
+	int ret = amSensor.read();
+	Serial.print("Read result: ");
+	Serial.println(ret);
+
+	Serial.print("Humidity (%RH): ");
+	Serial.println(amSensor.humidity, 2);
+	Serial.print("Temperature (C): ");
+	Serial.println(amSensor.temperature, 2);
+	Serial.println();
+
+	delay(2000);
+}
+}}}
