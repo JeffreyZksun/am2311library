@@ -58,3 +58,13 @@ void loop() {
 	delay(2000);
 }
 }}}
+
+ = Practical Eample =
+This sensor and library is used in the project [https://pachube.com/feeds/42131 House Online]
+[https://api.pachube.com/v2/feeds/42131/datastreams/0.png?width=702&height=250&colour=F15A24&duration=24hours&detailed_grid=true&show_axis_labels=true&timezone=]
+
+Figure 1 - Temperature from AM2311
+
+[https://api.pachube.com/v2/feeds/42131/datastreams/1.png?width=702&height=250&colour=F15A24&duration=24hours&detailed_grid=true&show_axis_labels=true&timezone=]
+
+Figure 2 - Humidity from AM2311
