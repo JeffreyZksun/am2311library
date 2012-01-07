@@ -3,7 +3,7 @@
 
  = Introduction =
 
-The library reads the temperature and humidty data from AOSONG AM2311 sensor. It makes the communication between Arduino and seanor easy.
+The library reads the temperature and humidty data from AOSONG AM2311 sensor. It makes the communication between Arduino and sensor easy.
 
 [http://www.aosong.com/asp_bin/Products/AM2311.jpg]
  
